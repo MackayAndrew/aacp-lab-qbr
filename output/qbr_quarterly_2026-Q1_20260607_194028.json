@@ -1,0 +1,399 @@
+{
+  "timestamp": "2026-06-07T19:40:28.375635+00:00",
+  "cadence": "quarterly",
+  "period": "2026-Q1",
+  "model": "gpt-4.1-mini",
+  "mode": "mock",
+  "hops": 6,
+  "cost_usd": 0.0035859999999999998,
+  "metrics": {
+    "period": "2026-Q1",
+    "source": "jira",
+    "velocity": {
+      "average": 48.0,
+      "trend": "stable",
+      "sprints": [
+        {
+          "name": "Sprint 10",
+          "completed": 42,
+          "committed": 48
+        },
+        {
+          "name": "Sprint 11",
+          "completed": 51,
+          "committed": 50
+        },
+        {
+          "name": "Sprint 12",
+          "completed": 38,
+          "committed": 52
+        },
+        {
+          "name": "Sprint 13",
+          "completed": 55,
+          "committed": 54
+        },
+        {
+          "name": "Sprint 14",
+          "completed": 49,
+          "committed": 50
+        },
+        {
+          "name": "Sprint 15",
+          "completed": 53,
+          "committed": 52
+        }
+      ]
+    },
+    "okr_summary": [
+      {
+        "objective": "Reduce customer onboarding time by 40%",
+        "on_track_count": 2,
+        "total_kr": 3,
+        "status": "at_risk"
+      },
+      {
+        "objective": "Ship product integrations that unlock enterprise deals",
+        "on_track_count": 2,
+        "total_kr": 3,
+        "status": "at_risk"
+      }
+    ],
+    "bugs": {
+      "open": 23,
+      "critical": 2,
+      "sla_breaches": 1
+    },
+    "flags": []
+  },
+  "notes": {
+    "period": "2026-Q1",
+    "source": "notion",
+    "meeting_count": 3,
+    "key_decisions": [
+      "SSO delivery pushed to Q2 due to security review dependency",
+      "Onboarding time target confirmed at 8 days by end of Q1",
+      "Engineering capacity locked -- no new projects until March",
+      "Sprint 12 velocity drop attributed to two engineers on leave",
+      "Salesforce integration shipped on schedule",
+      "Onboarding time at 11 days -- intervention required",
+      "Onboarding improvement plan delivered -- time now at 9.5 days",
+      "Two critical bugs identified in payment module -- fix prioritised",
+      "SSO security review complete -- build begins Q2 Sprint 1"
+    ],
+    "action_items": {
+      "total": 7,
+      "complete": 5,
+      "in_progress": 2,
+      "overdue": 0,
+      "items": [
+        {
+          "owner": "Marcus Webb",
+          "action": "Confirm enterprise pipeline forecast with sales team",
+          "due": "2026-01-15",
+          "status": "complete"
+        },
+        {
+          "owner": "David Park",
+          "action": "Initiate security review for SSO vendor",
+          "due": "2026-01-22",
+          "status": "complete"
+        },
+        {
+          "owner": "Sarah Chen",
+          "action": "Review onboarding funnel and identify top three blockers",
+          "due": "2026-02-12",
+          "status": "complete"
+        },
+        {
+          "owner": "Linda Torres",
+          "action": "Schedule customer interviews for onboarding feedback",
+          "due": "2026-02-19",
+          "status": "complete"
+        },
+        {
+          "owner": "David Park",
+          "action": "Patch critical payment bugs before Q1 close",
+          "due": "2026-03-15",
+          "status": "complete"
+        },
+        {
+          "owner": "Marcus Webb",
+          "action": "Prepare Q1 pipeline report for board pack",
+          "due": "2026-03-28",
+          "status": "in_progress"
+        },
+        {
+          "owner": "Sarah Chen",
+          "action": "Draft Q1 engineering retrospective",
+          "due": "2026-03-28",
+          "status": "in_progress"
+        }
+      ]
+    },
+    "themes": [
+      "Onboarding process improvement",
+      "SSO security and delivery",
+      "Engineering capacity and project scheduling",
+      "Salesforce integration",
+      "Payment module bug fixes"
+    ]
+  },
+  "budget": {
+    "period": "2026-Q1",
+    "source": "sheets",
+    "regions": [
+      "EMEA",
+      "NAMER"
+    ],
+    "total_approved": 1895000,
+    "total_actual": 1867700,
+    "total_variance": -27300,
+    "total_variance_pct": -1.44,
+    "material_variances": [
+      {
+        "region": "EMEA",
+        "dept": "Sales",
+        "variance_pct": 8.8,
+        "flag": "Over budget by 8.8% -- pipeline growth driving spend"
+      },
+      {
+        "region": "NAMER",
+        "dept": "Sales",
+        "variance_pct": 7.9,
+        "flag": "Over budget by 7.9% -- consistent with EMEA, pipeline-driven"
+      }
+    ],
+    "overall_status": "under_budget"
+  },
+  "consolidated": {
+    "period": "2026-Q1",
+    "cadence": "quarterly",
+    "metrics_summary": {
+      "velocity_average": 48,
+      "velocity_trend": "stable",
+      "velocity_sprints": [
+        {
+          "name": "Sprint 10",
+          "completed": 42,
+          "committed": 48
+        },
+        {
+          "name": "Sprint 11",
+          "completed": 51,
+          "committed": 50
+        },
+        {
+          "name": "Sprint 12",
+          "completed": 38,
+          "committed": 52
+        },
+        {
+          "name": "Sprint 13",
+          "completed": 55,
+          "committed": 54
+        },
+        {
+          "name": "Sprint 14",
+          "completed": 49,
+          "committed": 50
+        },
+        {
+          "name": "Sprint 15",
+          "completed": 53,
+          "committed": 52
+        }
+      ],
+      "okr_summary": [
+        {
+          "objective": "Reduce customer onboarding time by 40%",
+          "on_track_count": 2,
+          "total_kr": 3,
+          "status": "at_risk"
+        },
+        {
+          "objective": "Ship product integrations that unlock enterprise deals",
+          "on_track_count": 2,
+          "total_kr": 3,
+          "status": "at_risk"
+        }
+      ],
+      "bugs": {
+        "open": 23,
+        "critical": 2,
+        "sla_breaches": 1
+      },
+      "flags": []
+    },
+    "notes_summary": {
+      "meeting_count": 3,
+      "key_decisions": [
+        "SSO delivery pushed to Q2 due to security review dependency",
+        "Onboarding time target confirmed at 8 days by end of Q1",
+        "Engineering capacity locked -- no new projects until March",
+        "Sprint 12 velocity drop attributed to two engineers on leave",
+        "Salesforce integration shipped on schedule",
+        "Onboarding time at 11 days -- intervention required",
+        "Onboarding improvement plan delivered -- time now at 9.5 days",
+        "Two critical bugs identified in payment module -- fix prioritised",
+        "SSO security review complete -- build begins Q2 Sprint 1"
+      ],
+      "action_items": {
+        "total": 7,
+        "complete": 5,
+        "in_progress": 2,
+        "overdue": 0,
+        "items": [
+          {
+            "owner": "Marcus Webb",
+            "action": "Confirm enterprise pipeline forecast with sales team",
+            "due": "2026-01-15",
+            "status": "complete"
+          },
+          {
+            "owner": "David Park",
+            "action": "Initiate security review for SSO vendor",
+            "due": "2026-01-22",
+            "status": "complete"
+          },
+          {
+            "owner": "Sarah Chen",
+            "action": "Review onboarding funnel and identify top three blockers",
+            "due": "2026-02-12",
+            "status": "complete"
+          },
+          {
+            "owner": "Linda Torres",
+            "action": "Schedule customer interviews for onboarding feedback",
+            "due": "2026-02-19",
+            "status": "complete"
+          },
+          {
+            "owner": "David Park",
+            "action": "Patch critical payment bugs before Q1 close",
+            "due": "2026-03-15",
+            "status": "complete"
+          },
+          {
+            "owner": "Marcus Webb",
+            "action": "Prepare Q1 pipeline report for board pack",
+            "due": "2026-03-28",
+            "status": "in_progress"
+          },
+          {
+            "owner": "Sarah Chen",
+            "action": "Draft Q1 engineering retrospective",
+            "due": "2026-03-28",
+            "status": "in_progress"
+          }
+        ]
+      },
+      "themes": [
+        "Onboarding process improvement",
+        "SSO security and delivery",
+        "Engineering capacity and project scheduling",
+        "Salesforce integration",
+        "Payment module bug fixes"
+      ]
+    },
+    "budget_summary": {
+      "regions": [
+        "EMEA",
+        "NAMER"
+      ],
+      "total_approved": 1895000,
+      "total_actual": 1867700,
+      "total_variance": -27300,
+      "total_variance_pct": -1.44,
+      "material_variances": [
+        {
+          "region": "EMEA",
+          "dept": "Sales",
+          "variance_pct": 8.8,
+          "flag": "Over budget by 8.8% -- pipeline growth driving spend"
+        },
+        {
+          "region": "NAMER",
+          "dept": "Sales",
+          "variance_pct": 7.9,
+          "flag": "Over budget by 7.9% -- consistent with EMEA, pipeline-driven"
+        }
+      ],
+      "overall_status": "under_budget"
+    },
+    "cross_references": [
+      {
+        "finding": "Onboarding time remains above target despite improvement efforts",
+        "source": "metrics|notes",
+        "significance": "high"
+      },
+      {
+        "finding": "Two critical bugs in payment module prioritized and patched",
+        "source": "notes|metrics",
+        "significance": "high"
+      },
+      {
+        "finding": "Sales department over budget in both EMEA and NAMER regions due to pipeline growth",
+        "source": "budget",
+        "significance": "medium"
+      },
+      {
+        "finding": "Sprint 12 velocity drop linked to two engineers on leave",
+        "source": "metrics|notes",
+        "significance": "medium"
+      },
+      {
+        "finding": "SSO delivery delayed to Q2 due to security review dependency",
+        "source": "notes",
+        "significance": "medium"
+      }
+    ],
+    "headline_numbers": {
+      "avg_velocity": 48,
+      "okrs_on_track": 4,
+      "okrs_total": 6,
+      "budget_variance_pct": -1.44,
+      "actions_complete": 5,
+      "actions_total": 7
+    }
+  },
+  "narrative": {
+    "executive_summary": "In Q1 2026, we maintained a stable engineering velocity averaging 48 points per sprint, successfully shipping the Salesforce integration on schedule and patching two critical payment module bugs. However, key strategic objectives remain at risk, notably the goal to reduce customer onboarding time by 40%, which currently stands at 9.5 days, above the 8-day target. The SSO delivery has been delayed to Q2 due to a necessary security review, impacting our integration timeline. Sales departments in both EMEA and NAMER exceeded their budgets by approximately 8%, driven by pipeline growth, though overall spending remains under budget by 1.44%. Engineering capacity is fully allocated, with no new projects approved until March, ensuring focus on current priorities.",
+    "key_accomplishments": [
+      "Stable average sprint velocity of 48 points maintained",
+      "Salesforce integration shipped on schedule",
+      "Two critical payment module bugs identified and patched",
+      "Onboarding improvement plan delivered, reducing time from 11 to 9.5 days",
+      "Completion of SSO security review enabling build start in Q2"
+    ],
+    "risks": [
+      {
+        "risk": "Customer onboarding time remains above target, risking customer satisfaction and retention",
+        "severity": "high",
+        "mitigation": "Implement and monitor onboarding improvement plan with targeted interventions and customer feedback"
+      },
+      {
+        "risk": "SSO delivery delayed to Q2 due to security review dependency, impacting integration roadmap",
+        "severity": "medium",
+        "mitigation": "Prioritize SSO build in Q2 Sprint 1 and closely monitor progress to avoid further delays"
+      },
+      {
+        "risk": "Sales departments in EMEA and NAMER over budget by ~8%, potentially impacting financial targets",
+        "severity": "medium",
+        "mitigation": "Review sales spend and pipeline growth alignment; adjust forecasts and controls as needed"
+      }
+    ],
+    "budget_headline": "Overall budget remains under by 1.44%, despite sales departments in EMEA and NAMER exceeding budgets by approximately 8% due to pipeline-driven spend.",
+    "recommendation": {
+      "action": "continue",
+      "rationale": "Current strategic initiatives demonstrate solid progress with manageable risks. Focused efforts on onboarding improvements and SSO delivery are critical. Budget overruns in sales are justified by pipeline growth and do not threaten overall financial health."
+    },
+    "next_quarter_focus": [
+      "Execute SSO build and delivery starting Q2 Sprint 1",
+      "Drive onboarding time reduction to meet 8-day target",
+      "Monitor and control sales department spending relative to pipeline growth",
+      "Complete Q1 engineering retrospective and pipeline reporting",
+      "Maintain focus on critical bug resolution and system stability"
+    ]
+  }
+}
