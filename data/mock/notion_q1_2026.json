@@ -1,0 +1,97 @@
+{
+  "period": "2026-Q1",
+  "meetings": [
+    {
+      "date": "2026-01-08",
+      "title": "Q1 Kick-off",
+      "attendees": [
+        "Sarah Chen",
+        "Marcus Webb",
+        "David Park",
+        "Linda Torres"
+      ],
+      "decisions": [
+        "SSO delivery pushed to Q2 due to security review dependency",
+        "Onboarding time target confirmed at 8 days by end of Q1",
+        "Engineering capacity locked -- no new projects until March"
+      ],
+      "action_items": [
+        {
+          "owner": "Marcus Webb",
+          "action": "Confirm enterprise pipeline forecast with sales team",
+          "due": "2026-01-15",
+          "status": "complete"
+        },
+        {
+          "owner": "David Park",
+          "action": "Initiate security review for SSO vendor",
+          "due": "2026-01-22",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "date": "2026-02-05",
+      "title": "February Review",
+      "attendees": [
+        "Sarah Chen",
+        "Marcus Webb",
+        "David Park"
+      ],
+      "decisions": [
+        "Sprint 12 velocity drop attributed to two engineers on leave",
+        "Salesforce integration shipped on schedule",
+        "Onboarding time at 11 days -- intervention required"
+      ],
+      "action_items": [
+        {
+          "owner": "Sarah Chen",
+          "action": "Review onboarding funnel and identify top three blockers",
+          "due": "2026-02-12",
+          "status": "complete"
+        },
+        {
+          "owner": "Linda Torres",
+          "action": "Schedule customer interviews for onboarding feedback",
+          "due": "2026-02-19",
+          "status": "complete"
+        }
+      ]
+    },
+    {
+      "date": "2026-03-05",
+      "title": "March Review",
+      "attendees": [
+        "Sarah Chen",
+        "Marcus Webb",
+        "David Park",
+        "Linda Torres"
+      ],
+      "decisions": [
+        "Onboarding improvement plan delivered -- time now at 9.5 days",
+        "Two critical bugs identified in payment module -- fix prioritised",
+        "SSO security review complete -- build begins Q2 Sprint 1"
+      ],
+      "action_items": [
+        {
+          "owner": "David Park",
+          "action": "Patch critical payment bugs before Q1 close",
+          "due": "2026-03-15",
+          "status": "complete"
+        },
+        {
+          "owner": "Marcus Webb",
+          "action": "Prepare Q1 pipeline report for board pack",
+          "due": "2026-03-28",
+          "status": "in_progress"
+        },
+        {
+          "owner": "Sarah Chen",
+          "action": "Draft Q1 engineering retrospective",
+          "due": "2026-03-28",
+          "status": "in_progress"
+        }
+      ]
+    }
+  ]
+}

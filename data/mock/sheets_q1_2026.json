@@ -1,0 +1,85 @@
+{
+  "period": "2026-Q1",
+  "regions": [
+    {
+      "region": "EMEA",
+      "currency": "GBP",
+      "departments": [
+        {
+          "dept": "Engineering",
+          "approved_q1": 420000,
+          "actual_q1": 398500,
+          "variance": -21500,
+          "variance_pct": -5.1
+        },
+        {
+          "dept": "Sales",
+          "approved_q1": 140000,
+          "actual_q1": 152300,
+          "variance": 12300,
+          "variance_pct": 8.8
+        },
+        {
+          "dept": "Marketing",
+          "approved_q1": 85000,
+          "actual_q1": 79200,
+          "variance": -5800,
+          "variance_pct": -6.8
+        },
+        {
+          "dept": "Operations",
+          "approved_q1": 95000,
+          "actual_q1": 97100,
+          "variance": 2100,
+          "variance_pct": 2.2
+        }
+      ]
+    },
+    {
+      "region": "NAMER",
+      "currency": "USD",
+      "departments": [
+        {
+          "dept": "Engineering",
+          "approved_q1": 680000,
+          "actual_q1": 671000,
+          "variance": -9000,
+          "variance_pct": -1.3
+        },
+        {
+          "dept": "Sales",
+          "approved_q1": 310000,
+          "actual_q1": 334500,
+          "variance": 24500,
+          "variance_pct": 7.9
+        },
+        {
+          "dept": "Marketing",
+          "approved_q1": 120000,
+          "actual_q1": 118400,
+          "variance": -1600,
+          "variance_pct": -1.3
+        },
+        {
+          "dept": "Operations",
+          "approved_q1": 75000,
+          "actual_q1": 74200,
+          "variance": -800,
+          "variance_pct": -1.1
+        }
+      ]
+    }
+  ],
+  "flags": [
+    {
+      "region": "EMEA",
+      "dept": "Sales",
+      "flag": "Over budget by 8.8% -- pipeline growth driving spend"
+    },
+    {
+      "region": "NAMER",
+      "dept": "Sales",
+      "flag": "Over budget by 7.9% -- consistent with EMEA, pipeline-driven"
+    }
+  ]
+}
