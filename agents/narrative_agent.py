@@ -15,15 +15,40 @@ import time
 SYSTEM_PROMPTS = {
     "daily": """You are Narrative-Agent. Draft a brief daily anomaly report.
 Focus on: what changed, what is blocked, what needs immediate attention.
-Return valid JSON only. No markdown fences.""",
+Return valid JSON only. No markdown fences.
+
+Output shape:
+{
+  "executive_summary": "1 paragraph summary string",
+  "anomalies": ["string"],
+  "blockers": ["string"],
+  "actions_needed": ["string"]
+}""",
 
     "weekly": """You are Narrative-Agent. Draft a weekly progress summary.
 Focus on: progress vs targets, risks emerging, blockers to resolve.
-Return valid JSON only. No markdown fences.""",
+Return valid JSON only. No markdown fences.
+
+Output shape:
+{
+  "executive_summary": "1-2 paragraph narrative string",
+  "highlights": ["string"],
+  "blockers": ["string"],
+  "risks": [{"risk": "string", "severity": "high|medium|low"}]
+}""",
 
     "monthly": """You are Narrative-Agent. Draft a monthly management summary.
 Focus on: progress vs plan, budget status, team health, risks.
-Return valid JSON only. No markdown fences.""",
+Return valid JSON only. No markdown fences.
+
+Output shape:
+{
+  "executive_summary": "2 paragraph narrative string",
+  "highlights": ["string"],
+  "risks": [{"risk": "string", "severity": "high|medium|low"}],
+  "budget_headline": "string",
+  "actions_summary": {"complete": 0, "in_progress": 0, "overdue": 0}
+}""",
 
     "quarterly": """You are Narrative-Agent. Draft a quarterly executive summary.
 This will be presented by a senior manager to leadership.

@@ -204,10 +204,22 @@ def run_qbr(model, period, cadence, mode, output_dir):
             for line in str(summary)[:400].split(". "):
                 if line.strip():
                     print(f"  {line.strip()}.")
+        else:
+            # Non-quarterly cadences may nest differently
+            highlights = r5.get("highlights", [])
+            for h in highlights[:3]:
+                print(f"  - {h}")
         rec = r5.get("recommendation", {})
         if rec:
             print(f"\n  RECOMMENDATION: {rec.get('action','?').upper()}")
             print(f"  {rec.get('rationale','')[:100]}")
+        risks = r5.get("risks", [])
+        if risks:
+            print(f"\n  RISKS ({len(risks)}):")
+            for r in risks[:2]:
+                sev = r.get("severity","?") if isinstance(r, dict) else "?"
+                txt = r.get("risk","?") if isinstance(r, dict) else str(r)
+                print(f"  [{sev.upper()}] {txt[:70]}")
 
     # Save output
     output_dir.mkdir(exist_ok=True)
