@@ -59,7 +59,7 @@ class LiveJiraClient:
         jql      = f"project={self.project_key} ORDER BY created ASC"
         encoded  = urllib.request.quote(jql)
         data     = self._get(
-            f"search?jql={encoded}&maxResults=100"
+            f"search/jql?jql={encoded}&maxResults=100"
             f"&fields=summary,status,issuetype,created,resolutiondate"
         )
 
