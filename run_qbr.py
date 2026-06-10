@@ -109,11 +109,12 @@ def run_qbr(model, period, cadence, mode, output_dir):
         notion_conn = MockNotionClient(period=period)
         sheets_conn = MockSheetsClient(period=period)
     else:
-        # v5 live connectors -- placeholder
-        raise NotImplementedError(
-            "Live connections coming in Lab v5. "
-            "See connectors/live/ for setup instructions."
-        )
+        from connectors.live.jira_live   import LiveJiraClient
+        from connectors.live.notion_live import LiveNotionClient
+        from connectors.live.sheets_live import LiveSheetsClient
+        jira_conn   = LiveJiraClient(period=period)
+        notion_conn = LiveNotionClient(period=period)
+        sheets_conn = LiveSheetsClient(period=period)
 
     api_key = os.environ.get("OPENAI_API_KEY")
     kw      = {"model": model, "api_key": api_key}
