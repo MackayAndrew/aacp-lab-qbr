@@ -36,7 +36,7 @@ def api(method, path, data=None):
                                   headers=HEADERS, method=method)
     try:
         resp = urllib.request.urlopen(req)
-        return json.loads(resp.read()) if resp.read() else {}
+        raw = resp.read(); return json.loads(raw) if raw else {}
     except urllib.error.HTTPError as e:
         body = e.read().decode()
         print(f"  ERROR {e.code}: {body[:200]}")
@@ -118,7 +118,7 @@ for epic in epics:
                     {"type": "text", "text": epic["description"]}
                 ]}]
             },
-            "issuetype": {"name": "Epic"},
+            "issuetype": {"name": "Workstream"},
         }
     })
     if result:
@@ -150,7 +150,7 @@ for kr in key_results:
         "fields": {
             "project":   {"key": PROJECT_KEY},
             "summary":   kr["summary"],
-            "issuetype": {"name": "Story"},
+            "issuetype": {"name": "Task"},
         }
     })
     if result:
